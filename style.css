@@ -1,0 +1,110 @@
+* {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+/*   
+font-family: 'Big Shoulders Display', cursive;
+
+font-family: 'Lexend Deca', sans-serif;
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img,
+picture,
+video {
+  max-width: 100%;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main_container {
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    height: 50%;
+}
+.icon_container {
+    padding: 2.5rem;
+}
+.cars_header {
+    margin-left: 2.5rem ;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.cars_paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 1.5rem 2.5rem;
+    letter-spacing: .07em;
+}
+.btn {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 95%);
+    margin: 6rem 2.5rem;
+    padding: 1em;
+    border-radius: 100px;
+    width: 10vw;
+    border: none;
+    cursor: pointer;
+    border: .15rem solid hsl(0, 0%, 95%);
+}
+.btn:active {
+    color: hsl(0, 0%, 95%);
+    border: .15rem solid hsl(0, 0%, 95%);
+}
+.btn_sedan {
+    color: var(--bright-orange);
+}
+.btn_sedan:active {
+    background-color: var(--bright-orange);
+}
+.btn_suvs {
+    color: var(--dark-cyan);
+}
+.btn_suvs:active {
+    background-color: var(--dark-cyan);
+}
+.btn_luxury {
+    color: var(--very-dark-cyan);
+}
+.btn_luxury:active {
+    background-color: var(--very-dark-cyan);
+}
+.sedan_card {
+    background-color: var(--bright-orange);
+}
+.suvs_card {
+    background-color: var(--dark-cyan);
+}
+.luxury_card {
+    background-color: var(--very-dark-cyan);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px){
+    .main_container {
+        overflow: visible;
+    }
+    .btn {
+        width: 50vw;
+    }
+}
